@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCA9547D,112
+D I2C Multiplexer 1Element 8IN 24P SO Tube NXP PCA9547D,112, Multiplexer Single 8:1, 24-Pin SOIC
+F http://cache.nxp.com/documents/data_sheet/PCA9547.pdf?pspll=1
+$ENDCMP
+#
+#End Doc Library

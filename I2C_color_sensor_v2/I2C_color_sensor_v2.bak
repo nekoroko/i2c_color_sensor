@@ -1,0 +1,1245 @@
+EESchema Schematic File Version 4
+LIBS:I2C_color_sensor_v2-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L I2C_color_sensor_v2-rescue:PQ033EZ1HZ-PQ033EZ1HZ U1
+U 1 1 5BF8F93E
+P 2800 5000
+F 0 "U1" H 2181 5371 50  0000 R CNN
+F 1 "PQ033EZ1HZ" H 2181 5280 50  0000 R CNN
+F 2 "mylib:PQ033EZH1HZ" H 2700 4900 50  0001 C CNN
+F 3 "datasheet\\SHRPS01564-1.pdf" H 3300 4800 50  0001 C CNN
+	1    2800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:PCA9547D,112-PCA9547D IC1
+U 1 1 5BF8FC45
+P 5250 3500
+F 0 "IC1" H 5800 3767 50  0000 C CNN
+F 1 "PCA9547D,112" H 5800 3676 50  0000 C CNN
+F 2 "SMD_Packages:SOIC-24" H 5800 2150 50  0001 C CNN
+F 3 "http://cache.nxp.com/documents/data_sheet/PCA9547.pdf?pspll=1" H 5800 2050 50  0001 C CNN
+F 4 "I2C Multiplexer 1Element 8IN 24P SO Tube NXP PCA9547D,112, Multiplexer Single 8:1, 24-Pin SOIC" H 5800 1950 50  0001 C CNN "Description"
+F 5 "RS" H 5800 1850 50  0001 C CNN "Supplier_Name"
+F 6 "7258877P" H 5800 1750 50  0001 C CNN "RS Part Number"
+F 7 "Nexperia" H 5800 1650 50  0001 C CNN "Manufacturer_Name"
+F 8 "PCA9547D,112" H 5800 1550 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "1.1" H 6200 1250 50  0001 C CNN "Height"
+	1    5250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:Conn_01x04-conn J1
+U 1 1 5BF90428
+P 2350 3650
+F 0 "J1" V 2316 3362 50  0000 R CNN
+F 1 "Conn_01x04" V 2225 3362 50  0000 R CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 2350 3650 50  0001 C CNN
+F 3 "~" H 2350 3650 50  0001 C CNN
+	1    2350 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+5V-power #PWR0101
+U 1 1 5BF904E3
+P 2250 3850
+F 0 "#PWR0101" H 2250 3700 50  0001 C CNN
+F 1 "+5V" H 2265 4023 50  0000 C CNN
+F 2 "" H 2250 3850 50  0001 C CNN
+F 3 "" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+5V-power #PWR0102
+U 1 1 5BF90519
+P 2800 4350
+F 0 "#PWR0102" H 2800 4200 50  0001 C CNN
+F 1 "+5V" H 2815 4523 50  0000 C CNN
+F 2 "" H 2800 4350 50  0001 C CNN
+F 3 "" H 2800 4350 50  0001 C CNN
+	1    2800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0103
+U 1 1 5BF905B0
+P 2650 5000
+F 0 "#PWR0103" H 2650 4750 50  0001 C CNN
+F 1 "GND" H 2655 4827 50  0000 C CNN
+F 2 "" H 2650 5000 50  0001 C CNN
+F 3 "" H 2650 5000 50  0001 C CNN
+	1    2650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0104
+U 1 1 5BF90658
+P 3200 4750
+F 0 "#PWR0104" H 3200 4600 50  0001 C CNN
+F 1 "+3V3" V 3215 4878 50  0000 L CNN
+F 2 "" H 3200 4750 50  0001 C CNN
+F 3 "" H 3200 4750 50  0001 C CNN
+	1    3200 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0105
+U 1 1 5BF90692
+P 2550 3850
+F 0 "#PWR0105" H 2550 3600 50  0001 C CNN
+F 1 "GND" H 2555 3677 50  0000 C CNN
+F 2 "" H 2550 3850 50  0001 C CNN
+F 3 "" H 2550 3850 50  0001 C CNN
+	1    2550 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 2350 3850 3    50   BiDi ~ 0
+sda
+Text GLabel 2450 3850 3    50   BiDi ~ 0
+scl
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0106
+U 1 1 5BF907C5
+P 6350 3500
+F 0 "#PWR0106" H 6350 3350 50  0001 C CNN
+F 1 "+3V3" V 6365 3628 50  0000 L CNN
+F 2 "" H 6350 3500 50  0001 C CNN
+F 3 "" H 6350 3500 50  0001 C CNN
+	1    6350 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0107
+U 1 1 5BF907D8
+P 5250 4600
+F 0 "#PWR0107" H 5250 4350 50  0001 C CNN
+F 1 "GND" V 5255 4472 50  0000 R CNN
+F 2 "" H 5250 4600 50  0001 C CNN
+F 3 "" H 5250 4600 50  0001 C CNN
+	1    5250 4600
+	0    1    1    0   
+$EndComp
+Text GLabel 6350 3600 2    50   BiDi ~ 0
+sda
+Text GLabel 6350 3700 2    50   BiDi ~ 0
+scl
+Text GLabel 6350 4000 2    50   BiDi ~ 0
+sda7
+Text GLabel 6350 3900 2    50   BiDi ~ 0
+scl7
+Text GLabel 6350 4200 2    50   BiDi ~ 0
+sda6
+Text GLabel 6350 4100 2    50   BiDi ~ 0
+scl6
+Text GLabel 6350 4400 2    50   BiDi ~ 0
+sda5
+Text GLabel 6350 4300 2    50   BiDi ~ 0
+scl5
+Text GLabel 6350 4600 2    50   BiDi ~ 0
+sda4
+Text GLabel 6350 4500 2    50   BiDi ~ 0
+scl4
+Text GLabel 5250 4400 0    50   BiDi ~ 0
+sda3
+Text GLabel 5250 4500 0    50   BiDi ~ 0
+scl3
+Text GLabel 5250 4300 0    50   BiDi ~ 0
+scl2
+Text GLabel 5250 4200 0    50   BiDi ~ 0
+sda2
+Text GLabel 5250 4100 0    50   BiDi ~ 0
+scl1
+Text GLabel 5250 4000 0    50   BiDi ~ 0
+sda1
+Text GLabel 5250 3900 0    50   BiDi ~ 0
+scl0
+Text GLabel 5250 3800 0    50   BiDi ~ 0
+sda0
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0111
+U 1 1 5BF9176C
+P 7850 1200
+F 0 "#PWR0111" H 7850 1050 50  0001 C CNN
+F 1 "+3V3" V 7865 1328 50  0000 L CNN
+F 2 "" H 7850 1200 50  0001 C CNN
+F 3 "" H 7850 1200 50  0001 C CNN
+	1    7850 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0112
+U 1 1 5BF91787
+P 7850 1600
+F 0 "#PWR0112" H 7850 1350 50  0001 C CNN
+F 1 "GND" V 7855 1472 50  0000 R CNN
+F 2 "" H 7850 1600 50  0001 C CNN
+F 3 "" H 7850 1600 50  0001 C CNN
+	1    7850 1600
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 1600 2    50   BiDi ~ 0
+scl7
+Text GLabel 8550 1200 2    50   BiDi ~ 0
+sda7
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R1
+U 1 1 5BF933A1
+P 5300 6350
+F 0 "R1" H 5370 6396 50  0000 L CNN
+F 1 "R" H 5370 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5230 6350 50  0001 C CNN
+F 3 "" H 5300 6350 50  0001 C CNN
+	1    5300 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:LED-device D1
+U 1 1 5BF933FF
+P 5300 6650
+F 0 "D1" V 5338 6533 50  0000 R CNN
+F 1 "LED" V 5247 6533 50  0000 R CNN
+F 2 "LEDs:LED_1206_HandSoldering" H 5300 6650 50  0001 C CNN
+F 3 "" H 5300 6650 50  0001 C CNN
+	1    5300 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0121
+U 1 1 5BF9359C
+P 5300 6800
+F 0 "#PWR0121" H 5300 6550 50  0001 C CNN
+F 1 "GND" V 5305 6672 50  0000 R CNN
+F 2 "" H 5300 6800 50  0001 C CNN
+F 3 "" H 5300 6800 50  0001 C CNN
+	1    5300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0122
+U 1 1 5BF935D9
+P 5300 6200
+F 0 "#PWR0122" H 5300 6050 50  0001 C CNN
+F 1 "+3V3" V 5315 6328 50  0000 L CNN
+F 2 "" H 5300 6200 50  0001 C CNN
+F 3 "" H 5300 6200 50  0001 C CNN
+	1    5300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R2
+U 1 1 5BF93AD2
+P 5600 6350
+F 0 "R2" H 5670 6396 50  0000 L CNN
+F 1 "R" H 5670 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5530 6350 50  0001 C CNN
+F 3 "" H 5600 6350 50  0001 C CNN
+	1    5600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:LED-device D2
+U 1 1 5BF93AD8
+P 5600 6650
+F 0 "D2" V 5638 6533 50  0000 R CNN
+F 1 "LED" V 5547 6533 50  0000 R CNN
+F 2 "LEDs:LED_1206_HandSoldering" H 5600 6650 50  0001 C CNN
+F 3 "" H 5600 6650 50  0001 C CNN
+	1    5600 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0123
+U 1 1 5BF93ADE
+P 5600 6800
+F 0 "#PWR0123" H 5600 6550 50  0001 C CNN
+F 1 "GND" V 5605 6672 50  0000 R CNN
+F 2 "" H 5600 6800 50  0001 C CNN
+F 3 "" H 5600 6800 50  0001 C CNN
+	1    5600 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0124
+U 1 1 5BF93AE4
+P 5600 6200
+F 0 "#PWR0124" H 5600 6050 50  0001 C CNN
+F 1 "+3V3" V 5615 6328 50  0000 L CNN
+F 2 "" H 5600 6200 50  0001 C CNN
+F 3 "" H 5600 6200 50  0001 C CNN
+	1    5600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R3
+U 1 1 5BF93B1E
+P 5900 6350
+F 0 "R3" H 5970 6396 50  0000 L CNN
+F 1 "R" H 5970 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5830 6350 50  0001 C CNN
+F 3 "" H 5900 6350 50  0001 C CNN
+	1    5900 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:LED-device D3
+U 1 1 5BF93B24
+P 5900 6650
+F 0 "D3" V 5938 6533 50  0000 R CNN
+F 1 "LED" V 5847 6533 50  0000 R CNN
+F 2 "LEDs:LED_1206_HandSoldering" H 5900 6650 50  0001 C CNN
+F 3 "" H 5900 6650 50  0001 C CNN
+	1    5900 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0125
+U 1 1 5BF93B2A
+P 5900 6800
+F 0 "#PWR0125" H 5900 6550 50  0001 C CNN
+F 1 "GND" V 5905 6672 50  0000 R CNN
+F 2 "" H 5900 6800 50  0001 C CNN
+F 3 "" H 5900 6800 50  0001 C CNN
+	1    5900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0126
+U 1 1 5BF93B30
+P 5900 6200
+F 0 "#PWR0126" H 5900 6050 50  0001 C CNN
+F 1 "+3V3" V 5915 6328 50  0000 L CNN
+F 2 "" H 5900 6200 50  0001 C CNN
+F 3 "" H 5900 6200 50  0001 C CNN
+	1    5900 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R4
+U 1 1 5BF93B36
+P 6200 6350
+F 0 "R4" H 6270 6396 50  0000 L CNN
+F 1 "R" H 6270 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6130 6350 50  0001 C CNN
+F 3 "" H 6200 6350 50  0001 C CNN
+	1    6200 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:LED-device D4
+U 1 1 5BF93B3C
+P 6200 6650
+F 0 "D4" V 6238 6533 50  0000 R CNN
+F 1 "LED" V 6147 6533 50  0000 R CNN
+F 2 "LEDs:LED_1206_HandSoldering" H 6200 6650 50  0001 C CNN
+F 3 "" H 6200 6650 50  0001 C CNN
+	1    6200 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0127
+U 1 1 5BF93B42
+P 6200 6800
+F 0 "#PWR0127" H 6200 6550 50  0001 C CNN
+F 1 "GND" V 6205 6672 50  0000 R CNN
+F 2 "" H 6200 6800 50  0001 C CNN
+F 3 "" H 6200 6800 50  0001 C CNN
+	1    6200 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0128
+U 1 1 5BF93B48
+P 6200 6200
+F 0 "#PWR0128" H 6200 6050 50  0001 C CNN
+F 1 "+3V3" V 6215 6328 50  0000 L CNN
+F 2 "" H 6200 6200 50  0001 C CNN
+F 3 "" H 6200 6200 50  0001 C CNN
+	1    6200 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R5
+U 1 1 5BF93BC4
+P 6500 6350
+F 0 "R5" H 6570 6396 50  0000 L CNN
+F 1 "R" H 6570 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6430 6350 50  0001 C CNN
+F 3 "" H 6500 6350 50  0001 C CNN
+	1    6500 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:LED-device D5
+U 1 1 5BF93BCA
+P 6500 6650
+F 0 "D5" V 6538 6533 50  0000 R CNN
+F 1 "LED" V 6447 6533 50  0000 R CNN
+F 2 "LEDs:LED_1206_HandSoldering" H 6500 6650 50  0001 C CNN
+F 3 "" H 6500 6650 50  0001 C CNN
+	1    6500 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0129
+U 1 1 5BF93BD0
+P 6500 6800
+F 0 "#PWR0129" H 6500 6550 50  0001 C CNN
+F 1 "GND" V 6505 6672 50  0000 R CNN
+F 2 "" H 6500 6800 50  0001 C CNN
+F 3 "" H 6500 6800 50  0001 C CNN
+	1    6500 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0130
+U 1 1 5BF93BD6
+P 6500 6200
+F 0 "#PWR0130" H 6500 6050 50  0001 C CNN
+F 1 "+3V3" V 6515 6328 50  0000 L CNN
+F 2 "" H 6500 6200 50  0001 C CNN
+F 3 "" H 6500 6200 50  0001 C CNN
+	1    6500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:C-device C1
+U 1 1 5BF96CF9
+P 2250 4700
+F 0 "C1" H 2365 4746 50  0000 L CNN
+F 1 "C" H 2365 4655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2288 4550 50  0001 C CNN
+F 3 "" H 2250 4700 50  0001 C CNN
+	1    2250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4550 2250 4350
+Wire Wire Line
+	2250 4350 2800 4350
+Connection ~ 2800 4350
+Wire Wire Line
+	2650 5000 2250 5000
+Wire Wire Line
+	2250 5000 2250 4850
+Connection ~ 2650 5000
+$Comp
+L I2C_color_sensor_v2-rescue:C-device C2
+U 1 1 5BF96E42
+P 3000 5000
+F 0 "C2" V 2748 5000 50  0000 C CNN
+F 1 "C" V 2839 5000 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3038 4850 50  0001 C CNN
+F 3 "" H 3000 5000 50  0001 C CNN
+	1    3000 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5000 2650 5000
+Wire Wire Line
+	3150 5000 3200 5000
+Wire Wire Line
+	3200 5000 3200 4750
+Wire Wire Line
+	3200 4750 3150 4750
+Connection ~ 3200 4750
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R9
+U 1 1 5BF9A606
+P 5100 3700
+F 0 "R9" V 5100 3700 50  0000 L CNN
+F 1 "R" V 5100 3650 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5030 3700 50  0001 C CNN
+F 3 "" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0141
+U 1 1 5BF9A60C
+P 4950 3700
+F 0 "#PWR0141" H 4950 3550 50  0001 C CNN
+F 1 "+3V3" V 4900 3750 50  0000 L CNN
+F 2 "" H 4950 3700 50  0001 C CNN
+F 3 "" H 4950 3700 50  0001 C CNN
+	1    4950 3700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2850 6500 3    50   BiDi ~ 0
+sda
+Text GLabel 3050 6500 3    50   BiDi ~ 0
+scl
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R6
+U 1 1 5BF9AD11
+P 2850 6350
+F 0 "R6" H 2920 6396 50  0000 L CNN
+F 1 "R" H 2920 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2780 6350 50  0001 C CNN
+F 3 "" H 2850 6350 50  0001 C CNN
+	1    2850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0142
+U 1 1 5BF9AD17
+P 2850 6200
+F 0 "#PWR0142" H 2850 6050 50  0001 C CNN
+F 1 "+3V3" V 2865 6328 50  0000 L CNN
+F 2 "" H 2850 6200 50  0001 C CNN
+F 3 "" H 2850 6200 50  0001 C CNN
+	1    2850 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R7
+U 1 1 5BF9AD1D
+P 3050 6350
+F 0 "R7" H 3120 6396 50  0000 L CNN
+F 1 "R" H 3120 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2980 6350 50  0001 C CNN
+F 3 "" H 3050 6350 50  0001 C CNN
+	1    3050 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0143
+U 1 1 5BF9AD23
+P 3050 6200
+F 0 "#PWR0143" H 3050 6050 50  0001 C CNN
+F 1 "+3V3" V 3065 6328 50  0000 L CNN
+F 2 "" H 3050 6200 50  0001 C CNN
+F 3 "" H 3050 6200 50  0001 C CNN
+	1    3050 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4350 3150 4350
+Wire Wire Line
+	3150 4350 3150 4650
+Text GLabel 5250 3500 0    50   Input ~ 0
+A0
+Text GLabel 5250 3600 0    50   Input ~ 0
+A1
+Text GLabel 6350 3800 2    50   Input ~ 0
+A2
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0108
+U 1 1 5C22BA18
+P 2700 1950
+F 0 "#PWR0108" H 2700 1700 50  0001 C CNN
+F 1 "GND" V 2705 1822 50  0000 R CNN
+F 2 "" H 2700 1950 50  0001 C CNN
+F 3 "" H 2700 1950 50  0001 C CNN
+	1    2700 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0109
+U 1 1 5C22B751
+P 2600 2050
+F 0 "#PWR0109" H 2600 1900 50  0001 C CNN
+F 1 "+3V3" V 2615 2178 50  0000 L CNN
+F 2 "" H 2600 2050 50  0001 C CNN
+F 3 "" H 2600 2050 50  0001 C CNN
+	1    2600 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 2050 2600 2050
+Wire Wire Line
+	3050 2050 3200 2050
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R19
+U 1 1 5C22B317
+P 2900 2050
+F 0 "R19" H 2970 2096 50  0000 L CNN
+F 1 "R" H 2970 2005 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2830 2050 50  0001 C CNN
+F 3 "" H 2900 2050 50  0001 C CNN
+	1    2900 2050
+	0    1    1    0   
+$EndComp
+Text GLabel 3200 2050 2    50   Output ~ 0
+A0
+Text GLabel 3100 1950 2    50   Output ~ 0
+A0
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0110
+U 1 1 5C22BBD6
+P 2700 2500
+F 0 "#PWR0110" H 2700 2250 50  0001 C CNN
+F 1 "GND" V 2705 2372 50  0000 R CNN
+F 2 "" H 2700 2500 50  0001 C CNN
+F 3 "" H 2700 2500 50  0001 C CNN
+	1    2700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0144
+U 1 1 5C22BBDC
+P 2600 2600
+F 0 "#PWR0144" H 2600 2450 50  0001 C CNN
+F 1 "+3V3" V 2615 2728 50  0000 L CNN
+F 2 "" H 2600 2600 50  0001 C CNN
+F 3 "" H 2600 2600 50  0001 C CNN
+	1    2600 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 2600 2600 2600
+Wire Wire Line
+	3050 2600 3200 2600
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R20
+U 1 1 5C22BBE4
+P 2900 2600
+F 0 "R20" H 2970 2646 50  0000 L CNN
+F 1 "R" H 2970 2555 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2830 2600 50  0001 C CNN
+F 3 "" H 2900 2600 50  0001 C CNN
+	1    2900 2600
+	0    1    1    0   
+$EndComp
+Text GLabel 3200 2600 2    50   Output ~ 0
+A1
+Text GLabel 3100 2500 2    50   Output ~ 0
+A1
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0145
+U 1 1 5C22BCD8
+P 2700 3050
+F 0 "#PWR0145" H 2700 2800 50  0001 C CNN
+F 1 "GND" V 2705 2922 50  0000 R CNN
+F 2 "" H 2700 3050 50  0001 C CNN
+F 3 "" H 2700 3050 50  0001 C CNN
+	1    2700 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0146
+U 1 1 5C22BCDE
+P 2600 3150
+F 0 "#PWR0146" H 2600 3000 50  0001 C CNN
+F 1 "+3V3" V 2615 3278 50  0000 L CNN
+F 2 "" H 2600 3150 50  0001 C CNN
+F 3 "" H 2600 3150 50  0001 C CNN
+	1    2600 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 3150 2600 3150
+Wire Wire Line
+	3050 3150 3200 3150
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R21
+U 1 1 5C22BCE6
+P 2900 3150
+F 0 "R21" H 2970 3196 50  0000 L CNN
+F 1 "R" H 2970 3105 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2830 3150 50  0001 C CNN
+F 3 "" H 2900 3150 50  0001 C CNN
+	1    2900 3150
+	0    1    1    0   
+$EndComp
+Text GLabel 3200 3150 2    50   Output ~ 0
+A2
+Text GLabel 3100 3050 2    50   Output ~ 0
+A2
+$Comp
+L I2C_color_sensor_v2-rescue:GS2-conn J2
+U 1 1 5C22C3A8
+P 2900 1950
+F 0 "J2" V 2695 1950 50  0000 C CNN
+F 1 "GS2" V 2786 1950 50  0000 C CNN
+F 2 "Connectors:GS2" V 2974 1950 50  0001 C CNN
+F 3 "" H 2900 1950 50  0001 C CNN
+	1    2900 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GS2-conn J3
+U 1 1 5C22C5C0
+P 2900 2500
+F 0 "J3" V 2695 2500 50  0000 C CNN
+F 1 "GS2" V 2786 2500 50  0000 C CNN
+F 2 "Connectors:GS2" V 2974 2500 50  0001 C CNN
+F 3 "" H 2900 2500 50  0001 C CNN
+	1    2900 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GS2-conn J4
+U 1 1 5C22C6E2
+P 2900 3050
+F 0 "J4" V 2695 3050 50  0000 C CNN
+F 1 "GS2" V 2786 3050 50  0000 C CNN
+F 2 "Connectors:GS2" V 2974 3050 50  0001 C CNN
+F 3 "" H 2900 3050 50  0001 C CNN
+	1    2900 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:S11059-S11059 U2
+U 1 1 5C22B33C
+P 8200 1750
+F 0 "U2" H 8200 2525 50  0000 C CNN
+F 1 "S11059" H 8200 2434 50  0000 C CNN
+F 2 "mylib:S11059_SMD" H 8200 1750 50  0001 C CNN
+F 3 "" H 8200 1750 50  0001 C CNN
+	1    8200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1600 7850 1500
+Connection ~ 7850 1600
+Wire Wire Line
+	7850 1500 7850 1400
+Connection ~ 7850 1500
+Wire Wire Line
+	7850 1400 7850 1300
+Connection ~ 7850 1400
+Wire Wire Line
+	8550 1300 8600 1300
+Wire Wire Line
+	8600 1300 8600 1400
+Wire Wire Line
+	8600 1500 8550 1500
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0113
+U 1 1 5C22BC53
+P 8600 1400
+F 0 "#PWR0113" H 8600 1150 50  0001 C CNN
+F 1 "GND" V 8605 1272 50  0000 R CNN
+F 2 "" H 8600 1400 50  0001 C CNN
+F 3 "" H 8600 1400 50  0001 C CNN
+	1    8600 1400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8600 1400
+Wire Wire Line
+	8600 1400 8600 1500
+NoConn ~ 8550 1400
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0114
+U 1 1 5C22D60F
+P 7850 1950
+F 0 "#PWR0114" H 7850 1800 50  0001 C CNN
+F 1 "+3V3" V 7865 2078 50  0000 L CNN
+F 2 "" H 7850 1950 50  0001 C CNN
+F 3 "" H 7850 1950 50  0001 C CNN
+	1    7850 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0115
+U 1 1 5C22D615
+P 7850 2350
+F 0 "#PWR0115" H 7850 2100 50  0001 C CNN
+F 1 "GND" V 7855 2222 50  0000 R CNN
+F 2 "" H 7850 2350 50  0001 C CNN
+F 3 "" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 2350 2    50   BiDi ~ 0
+scl6
+Text GLabel 8550 1950 2    50   BiDi ~ 0
+sda6
+$Comp
+L I2C_color_sensor_v2-rescue:S11059-S11059 U3
+U 1 1 5C22D61D
+P 8200 2500
+F 0 "U3" H 8200 3275 50  0000 C CNN
+F 1 "S11059" H 8200 3184 50  0000 C CNN
+F 2 "mylib:S11059_SMD" H 8200 2500 50  0001 C CNN
+F 3 "" H 8200 2500 50  0001 C CNN
+	1    8200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2050 8600 2050
+Wire Wire Line
+	8600 2050 8600 2150
+Wire Wire Line
+	8600 2250 8550 2250
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0116
+U 1 1 5C22D62C
+P 8600 2150
+F 0 "#PWR0116" H 8600 1900 50  0001 C CNN
+F 1 "GND" V 8605 2022 50  0000 R CNN
+F 2 "" H 8600 2150 50  0001 C CNN
+F 3 "" H 8600 2150 50  0001 C CNN
+	1    8600 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8600 2150
+Wire Wire Line
+	8600 2150 8600 2250
+NoConn ~ 8550 2150
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0117
+U 1 1 5C22D8AE
+P 7850 2700
+F 0 "#PWR0117" H 7850 2550 50  0001 C CNN
+F 1 "+3V3" V 7865 2828 50  0000 L CNN
+F 2 "" H 7850 2700 50  0001 C CNN
+F 3 "" H 7850 2700 50  0001 C CNN
+	1    7850 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0118
+U 1 1 5C22D8B4
+P 7850 3100
+F 0 "#PWR0118" H 7850 2850 50  0001 C CNN
+F 1 "GND" V 7855 2972 50  0000 R CNN
+F 2 "" H 7850 3100 50  0001 C CNN
+F 3 "" H 7850 3100 50  0001 C CNN
+	1    7850 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 3100 2    50   BiDi ~ 0
+scl5
+Text GLabel 8550 2700 2    50   BiDi ~ 0
+sda5
+$Comp
+L I2C_color_sensor_v2-rescue:S11059-S11059 U4
+U 1 1 5C22D8BC
+P 8200 3250
+F 0 "U4" H 8200 4025 50  0000 C CNN
+F 1 "S11059" H 8200 3934 50  0000 C CNN
+F 2 "mylib:S11059_SMD" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2800 8600 2800
+Wire Wire Line
+	8600 2800 8600 2900
+Wire Wire Line
+	8600 3000 8550 3000
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0119
+U 1 1 5C22D8CB
+P 8600 2900
+F 0 "#PWR0119" H 8600 2650 50  0001 C CNN
+F 1 "GND" V 8605 2772 50  0000 R CNN
+F 2 "" H 8600 2900 50  0001 C CNN
+F 3 "" H 8600 2900 50  0001 C CNN
+	1    8600 2900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8600 2900
+Wire Wire Line
+	8600 2900 8600 3000
+NoConn ~ 8550 2900
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0120
+U 1 1 5C22D8D4
+P 7850 3450
+F 0 "#PWR0120" H 7850 3300 50  0001 C CNN
+F 1 "+3V3" V 7865 3578 50  0000 L CNN
+F 2 "" H 7850 3450 50  0001 C CNN
+F 3 "" H 7850 3450 50  0001 C CNN
+	1    7850 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0147
+U 1 1 5C22D8DA
+P 7850 3850
+F 0 "#PWR0147" H 7850 3600 50  0001 C CNN
+F 1 "GND" V 7855 3722 50  0000 R CNN
+F 2 "" H 7850 3850 50  0001 C CNN
+F 3 "" H 7850 3850 50  0001 C CNN
+	1    7850 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 3850 2    50   BiDi ~ 0
+scl4
+Text GLabel 8550 3450 2    50   BiDi ~ 0
+sda4
+$Comp
+L I2C_color_sensor_v2-rescue:S11059-S11059 U5
+U 1 1 5C22D8E2
+P 8200 4000
+F 0 "U5" H 8200 4775 50  0000 C CNN
+F 1 "S11059" H 8200 4684 50  0000 C CNN
+F 2 "mylib:S11059_SMD" H 8200 4000 50  0001 C CNN
+F 3 "" H 8200 4000 50  0001 C CNN
+	1    8200 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3550 8600 3550
+Wire Wire Line
+	8600 3550 8600 3650
+Wire Wire Line
+	8600 3750 8550 3750
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0148
+U 1 1 5C22D8EB
+P 8600 3650
+F 0 "#PWR0148" H 8600 3400 50  0001 C CNN
+F 1 "GND" V 8605 3522 50  0000 R CNN
+F 2 "" H 8600 3650 50  0001 C CNN
+F 3 "" H 8600 3650 50  0001 C CNN
+	1    8600 3650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8600 3650
+Wire Wire Line
+	8600 3650 8600 3750
+NoConn ~ 8550 3650
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0149
+U 1 1 5C22EAA5
+P 7850 4200
+F 0 "#PWR0149" H 7850 4050 50  0001 C CNN
+F 1 "+3V3" V 7865 4328 50  0000 L CNN
+F 2 "" H 7850 4200 50  0001 C CNN
+F 3 "" H 7850 4200 50  0001 C CNN
+	1    7850 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0150
+U 1 1 5C22EAAB
+P 7850 4600
+F 0 "#PWR0150" H 7850 4350 50  0001 C CNN
+F 1 "GND" V 7855 4472 50  0000 R CNN
+F 2 "" H 7850 4600 50  0001 C CNN
+F 3 "" H 7850 4600 50  0001 C CNN
+	1    7850 4600
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 4600 2    50   BiDi ~ 0
+scl3
+Text GLabel 8550 4200 2    50   BiDi ~ 0
+sda3
+$Comp
+L I2C_color_sensor_v2-rescue:S11059-S11059 U6
+U 1 1 5C22EAB3
+P 8200 4750
+F 0 "U6" H 8200 5525 50  0000 C CNN
+F 1 "S11059" H 8200 5434 50  0000 C CNN
+F 2 "mylib:S11059_SMD" H 8200 4750 50  0001 C CNN
+F 3 "" H 8200 4750 50  0001 C CNN
+	1    8200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4300 8600 4300
+Wire Wire Line
+	8600 4300 8600 4400
+Wire Wire Line
+	8600 4500 8550 4500
+$Comp
+L I2C_color_sensor_v2-rescue:GND-power #PWR0151
+U 1 1 5C22EABC
+P 8600 4400
+F 0 "#PWR0151" H 8600 4150 50  0001 C CNN
+F 1 "GND" V 8605 4272 50  0000 R CNN
+F 2 "" H 8600 4400 50  0001 C CNN
+F 3 "" H 8600 4400 50  0001 C CNN
+	1    8600 4400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8600 4400
+Wire Wire Line
+	8600 4400 8600 4500
+NoConn ~ 8550 4400
+Text GLabel 4850 6500 3    50   BiDi ~ 0
+sda7
+Text GLabel 5050 6500 3    50   BiDi ~ 0
+scl7
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0140
+U 1 1 5BF99CE5
+P 5050 6200
+F 0 "#PWR0140" H 5050 6050 50  0001 C CNN
+F 1 "+3V3" V 5065 6328 50  0000 L CNN
+F 2 "" H 5050 6200 50  0001 C CNN
+F 3 "" H 5050 6200 50  0001 C CNN
+	1    5050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R18
+U 1 1 5BF99CDF
+P 5050 6350
+F 0 "R18" H 5120 6396 50  0000 L CNN
+F 1 "R" H 5120 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4980 6350 50  0001 C CNN
+F 3 "" H 5050 6350 50  0001 C CNN
+	1    5050 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0139
+U 1 1 5BF99CD9
+P 4850 6200
+F 0 "#PWR0139" H 4850 6050 50  0001 C CNN
+F 1 "+3V3" V 4865 6328 50  0000 L CNN
+F 2 "" H 4850 6200 50  0001 C CNN
+F 3 "" H 4850 6200 50  0001 C CNN
+	1    4850 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R17
+U 1 1 5BF99CD3
+P 4850 6350
+F 0 "R17" H 4920 6396 50  0000 L CNN
+F 1 "R" H 4920 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4780 6350 50  0001 C CNN
+F 3 "" H 4850 6350 50  0001 C CNN
+	1    4850 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4650 6500 3    50   BiDi ~ 0
+scl6
+Text GLabel 4450 6500 3    50   BiDi ~ 0
+sda6
+Text GLabel 4250 6500 3    50   BiDi ~ 0
+scl5
+Text GLabel 4050 6500 3    50   BiDi ~ 0
+sda5
+Text GLabel 3850 6500 3    50   BiDi ~ 0
+scl4
+Text GLabel 3650 6500 3    50   BiDi ~ 0
+sda4
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0138
+U 1 1 5BF99855
+P 4650 6200
+F 0 "#PWR0138" H 4650 6050 50  0001 C CNN
+F 1 "+3V3" V 4665 6328 50  0000 L CNN
+F 2 "" H 4650 6200 50  0001 C CNN
+F 3 "" H 4650 6200 50  0001 C CNN
+	1    4650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R16
+U 1 1 5BF9984F
+P 4650 6350
+F 0 "R16" H 4720 6396 50  0000 L CNN
+F 1 "R" H 4720 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4580 6350 50  0001 C CNN
+F 3 "" H 4650 6350 50  0001 C CNN
+	1    4650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0137
+U 1 1 5BF99849
+P 4450 6200
+F 0 "#PWR0137" H 4450 6050 50  0001 C CNN
+F 1 "+3V3" V 4465 6328 50  0000 L CNN
+F 2 "" H 4450 6200 50  0001 C CNN
+F 3 "" H 4450 6200 50  0001 C CNN
+	1    4450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R15
+U 1 1 5BF99843
+P 4450 6350
+F 0 "R15" H 4520 6396 50  0000 L CNN
+F 1 "R" H 4520 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4380 6350 50  0001 C CNN
+F 3 "" H 4450 6350 50  0001 C CNN
+	1    4450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0136
+U 1 1 5BF9983D
+P 4250 6200
+F 0 "#PWR0136" H 4250 6050 50  0001 C CNN
+F 1 "+3V3" V 4265 6328 50  0000 L CNN
+F 2 "" H 4250 6200 50  0001 C CNN
+F 3 "" H 4250 6200 50  0001 C CNN
+	1    4250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R14
+U 1 1 5BF99837
+P 4250 6350
+F 0 "R14" H 4320 6396 50  0000 L CNN
+F 1 "R" H 4320 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4180 6350 50  0001 C CNN
+F 3 "" H 4250 6350 50  0001 C CNN
+	1    4250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0135
+U 1 1 5BF99831
+P 4050 6200
+F 0 "#PWR0135" H 4050 6050 50  0001 C CNN
+F 1 "+3V3" V 4065 6328 50  0000 L CNN
+F 2 "" H 4050 6200 50  0001 C CNN
+F 3 "" H 4050 6200 50  0001 C CNN
+	1    4050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R13
+U 1 1 5BF9982B
+P 4050 6350
+F 0 "R13" H 4120 6396 50  0000 L CNN
+F 1 "R" H 4120 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3980 6350 50  0001 C CNN
+F 3 "" H 4050 6350 50  0001 C CNN
+	1    4050 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0134
+U 1 1 5BF997AD
+P 3850 6200
+F 0 "#PWR0134" H 3850 6050 50  0001 C CNN
+F 1 "+3V3" V 3865 6328 50  0000 L CNN
+F 2 "" H 3850 6200 50  0001 C CNN
+F 3 "" H 3850 6200 50  0001 C CNN
+	1    3850 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R12
+U 1 1 5BF997A7
+P 3850 6350
+F 0 "R12" H 3920 6396 50  0000 L CNN
+F 1 "R" H 3920 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3780 6350 50  0001 C CNN
+F 3 "" H 3850 6350 50  0001 C CNN
+	1    3850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0133
+U 1 1 5BF997A1
+P 3650 6200
+F 0 "#PWR0133" H 3650 6050 50  0001 C CNN
+F 1 "+3V3" V 3665 6328 50  0000 L CNN
+F 2 "" H 3650 6200 50  0001 C CNN
+F 3 "" H 3650 6200 50  0001 C CNN
+	1    3650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R11
+U 1 1 5BF9979B
+P 3650 6350
+F 0 "R11" H 3720 6396 50  0000 L CNN
+F 1 "R" H 3720 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3580 6350 50  0001 C CNN
+F 3 "" H 3650 6350 50  0001 C CNN
+	1    3650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0132
+U 1 1 5BF99737
+P 3450 6200
+F 0 "#PWR0132" H 3450 6050 50  0001 C CNN
+F 1 "+3V3" V 3465 6328 50  0000 L CNN
+F 2 "" H 3450 6200 50  0001 C CNN
+F 3 "" H 3450 6200 50  0001 C CNN
+	1    3450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R10
+U 1 1 5BF99731
+P 3450 6350
+F 0 "R10" H 3520 6396 50  0000 L CNN
+F 1 "R" H 3520 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3380 6350 50  0001 C CNN
+F 3 "" H 3450 6350 50  0001 C CNN
+	1    3450 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 6500 3    50   BiDi ~ 0
+scl3
+Text GLabel 3250 6500 3    50   BiDi ~ 0
+sda3
+$Comp
+L I2C_color_sensor_v2-rescue:+3V3-power #PWR0131
+U 1 1 5BF994FE
+P 3250 6200
+F 0 "#PWR0131" H 3250 6050 50  0001 C CNN
+F 1 "+3V3" V 3265 6328 50  0000 L CNN
+F 2 "" H 3250 6200 50  0001 C CNN
+F 3 "" H 3250 6200 50  0001 C CNN
+	1    3250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_color_sensor_v2-rescue:R-device R8
+U 1 1 5BF994F8
+P 3250 6350
+F 0 "R8" H 3320 6396 50  0000 L CNN
+F 1 "R" H 3320 6305 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3180 6350 50  0001 C CNN
+F 3 "" H 3250 6350 50  0001 C CNN
+	1    3250 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2050 7850 2150
+Wire Wire Line
+	7850 2150 7850 2250
+Connection ~ 7850 2150
+Wire Wire Line
+	7850 2250 7850 2350
+Connection ~ 7850 2250
+Connection ~ 7850 2350
+Wire Wire Line
+	7850 2800 7850 2900
+Wire Wire Line
+	7850 2900 7850 3000
+Connection ~ 7850 2900
+Wire Wire Line
+	7850 3000 7850 3100
+Connection ~ 7850 3000
+Connection ~ 7850 3100
+Wire Wire Line
+	7850 3550 7850 3650
+Wire Wire Line
+	7850 3750 7850 3650
+Connection ~ 7850 3650
+Wire Wire Line
+	7850 3750 7850 3850
+Connection ~ 7850 3750
+Connection ~ 7850 3850
+Wire Wire Line
+	7850 4400 7850 4300
+Wire Wire Line
+	7850 4500 7850 4400
+Connection ~ 7850 4400
+Wire Wire Line
+	7850 4500 7850 4600
+Connection ~ 7850 4500
+Connection ~ 7850 4600
+$EndSCHEMATC

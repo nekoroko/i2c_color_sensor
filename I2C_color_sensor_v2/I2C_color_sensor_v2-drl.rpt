@@ -1,0 +1,23 @@
+Drill report for D:\Robocon\ppr2019\circuit\I2C_color_sensor_v1\I2C_color_sensor_v1.kicad_pcb
+Created on 2018/11/25 5:16:49
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'I2C_color_sensor_v1-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.80mm  0.031"  (13 holes)
+    T2  1.00mm  0.039"  (24 holes)
+
+    Total plated holes count 37
+
+
+Drill file 'I2C_color_sensor_v1-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
